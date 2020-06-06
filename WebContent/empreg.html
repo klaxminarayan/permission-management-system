@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            
+    background: linear-gradient(to right,rgb(98, 156, 167),rgb(112, 211, 150),rgb(200,200,12));
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">EMPLOYEE&nbsp;REGISTRATION&nbsp;FORM </h1>
+       
+        <form  name="f" action="reg.jsp" method="post" onsubmit="validate()">
+        <table align="center">
+<tr>
+<td>Enter Id</td>
+<td><input type="text" name="id" placeholder="enter your id" required> </td>
+</tr>
+<tr>
+<td>Enter Name</td>
+<td><input type="text" name="name" onkeyup="this.value = this.value.toUpperCase();"  placeholder="enter your full name here" onkeyup="display()" required> </td>
+</tr>
+<tr>
+<td>Date of Birth</td>
+<td><input type="date" name="dob"  required> </td>
+</tr>
+<tr>
+<td>Enter Email Addres</td>
+<td><input type="email" name="email" placeholder="enter your working email" required> </td>
+</tr>
+<tr>
+<td>Enter Username</td>
+<td><input type="text" name="uname" placeholder="enter your username" required> </td>
+</tr>
+<tr>
+<td> Set Password <span style="font-size: small">(contain 1 Upper&lower case letters& numbers)</span></td>
+<td><input type="password" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength="8" placeholder="choose password (8-15char)" required></td>
+
+		
+ </tr>
+ <tr>
+<td>Gender</td>
+<td><input type="radio" name="gender"  value=male required>Male 
+<input type="radio" name="gender"  value=female required>Female 
+<input type="radio" name="gender" value=others required>Others </td>
+</tr>
+<tr>
+<td>Phone Number</td>
+<td><input type="text" name="mob" placeholder="enter your mobile No" required> </td>
+</tr>
+<tr>
+<td>Address</td>
+<td><textarea name="address" id="" cols="30" rows="10"></textarea> </td>
+</tr>
+
+<tr>
+<td><input type="checkbox" name="rules" required>I Accept Term & Conditions</td>
+</tr>
+<tr style="text-align: center">
+<td><input type="submit" value="Register"></td><td><input type="reset" value="Cancel"></td>
+
+</tr>
+<tr  >
+<td >If You Already Registerd <a href ="employeelogin.html" ><span style="color: #FFFFFF"> Click Here To Login!!!</span></a></td>    
+</tr>
+</table>
+</form>
+    </div>
+</div>
+
+
+</body>
+<script>
+
+    var myInput = document.getElementById("psw");
+    var letter = document.getElementById("letter");
+    var capital = document.getElementById("capital");
+    var number = document.getElementById("number");
+    var length = document.getElementById("length");
+    
+    // When the user clicks on the password field, show the message box
+    myInput.onfocus = function() {
+      document.getElementById("message").style.display = "block";
+    }
+    
+    // When the user clicks outside of the password field, hide the message box
+    myInput.onblur = function() {
+      document.getElementById("message").style.display = "none";
+    }
+    
+    // When the user starts to type something inside the password field
+    myInput.onkeyup = function() {
+      // Validate lowercase letters
+      var lowerCaseLetters = /[a-z]/g;
+      if(myInput.value.match(lowerCaseLetters)) {  
+        letter.classList.remove("invalid");
+        letter.classList.add("valid");
+      } else {
+        letter.classList.remove("valid");
+        letter.classList.add("invalid");
+      }
+      
+      // Validate capital letters
+      var upperCaseLetters = /[A-Z]/g;
+      if(myInput.value.match(upperCaseLetters)) {  
+        capital.classList.remove("invalid");
+        capital.classList.add("valid");
+      } else {
+        capital.classList.remove("valid");
+        capital.classList.add("invalid");
+      }
+    
+      // Validate numbers
+      var numbers = /[0-9]/g;
+      if(myInput.value.match(numbers)) {  
+        number.classList.remove("invalid");
+        number.classList.add("valid");
+      } else {
+        number.classList.remove("valid");
+        number.classList.add("invalid");
+      }
+      
+      // Validate length
+      if(myInput.value.length >= 8) {
+        length.classList.remove("invalid");
+        length.classList.add("valid");
+      } else {
+        length.classList.remove("valid");
+        length.classList.add("invalid");
+      }
+    }
+    </script>
+</html>

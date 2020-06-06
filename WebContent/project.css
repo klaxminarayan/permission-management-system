@@ -1,0 +1,111 @@
+body {
+    background: linear-gradient(to right,rgb(98, 156, 167),rgb(112, 211, 150),rgb(200,200,12));
+}
+h1 {
+     color:white;
+
+}
+
+.container {
+
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+button.accordion {
+  width: 100%;
+  background-color: rgb(25, 115, 138);
+  border: none;
+  border-radius: 17px;
+  outline: none;
+  text-align: left;
+  padding: 15px 20px;
+  font-size: 18px;
+  color: rgb(19, 1, 1);
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+button.accordion:after {
+  content: '\f055';
+  font-family: "fontawesome";
+  font-size: 14px;
+  float: right;
+
+}
+
+button.accordion.is-open:after {
+  content: '\f056';
+}
+
+button.accordion:hover, button.accordion.is-open {
+  background-color: #ddd;
+}
+
+.accordion-content {
+  background-color:  rgb(25, 115, 138);
+  border-left: 1px solid rgb(5, 5, 5);
+  border-right: 1px solid rgb(5, 5, 5);
+  border-radius: 17px;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+}
+#part1{
+text-align:center;
+    background: linear-gradient(to right,rgb(98, 156, 167),rgb(112, 211, 150),rgb(200,200,12));
+color:black;
+font-family:helvetica;
+
+height:10%
+}
+
+#part2{
+text-align:center;
+
+font-family:Times New Roman;
+
+}
+
+.part3{
+text-align:center;
+background-color:#FF1414;
+font-family:Arial;
+color:white;
+}
+.icon-bar a:hover {
+    background-color: #000;
+
+}
+
+.facebook {
+
+    color: white;
+}
+
+.twitter {
+
+    color: white;
+}
+
+.google {
+
+    color: white;
+}
+
+.linkedin {
+
+    color: white;
+}
+
+
+.youtube {
+
+    color: white;
+}
+.instagram
+{
+ color:white;
+}

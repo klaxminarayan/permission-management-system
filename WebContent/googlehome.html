@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>GoogleHome</title>
+  <style>
+	 
+  </style>
+</head>
+
+<body style="background: linear-gradient(to right,rgb(98, 156, 167),rgb(112, 211, 150),rgb(200,200,12));"><input type="button" value="Go Back From Where You Came!" onclick="history.back(-1)" />      
+    <p>
+       <h4> MODULES:1.	EMPLOYEE MODULE &nbsp;&nbsp;  2.LEADER MODULE &nbsp;&nbsp; 3.MANAGER MODULE <br> </h4>
+
+     <h3> EMPLOYEE MODULE:</h3>
+	When an employee login with valid credentials, there will be dashboard showcasing employee Name, Employee Image and the buttons as described below.
+
+<h5>�PREVIOUS PERMISSIONS:</h5>Employee can access previous Permissions, by clicking this button. There will be a list of permissions with unique ID generated at the time of raising request.
+<br><br><h5"><b>�	RAISE PERMISSION:</b></h5>
+		Employees can raise a request, when they click this button. They will be given text areas, where they can type the request information. When they click the submit button, letter with unique ID will be submitted to Leader. The raised request should be displayed in the previous Permissions list.
+<h3>LEADER MODULE: </h3>
+	When an employee login through leader button with valid credentials, he/she can see the list of Pending Permissions applied by the employees working under him.
+<h5>�	PENDING PERMISSIONS:</h5>
+		When an employee submitted a permission in employee module leader can view those permissions in his dashboard where a drop-down list will show the list of employees who raised the permissions.
+		Leader can click on any permission so that leader he can view, approve or delete permission. When a leader rejected the request, there will be a status change of permission in previous permission list in employee module. On the other hand, when leader approved the raised permission, the letter with unique ID will be submitted to Manager.
+<h3>MANAGER MODULE:</h3>
+<h5>�	PREVIOUS PERMISSIONS:</h5>
+	Here Manager can view a list of employees who applied for permissions under which a list of permissions applied by an employee.
+<h5>�	PENDING PERMISSIONS: </h5>
+		When an employee login through Manager button with valid credentials, he/she can see the list of Pending Permissions applied by the Employees working under designated leaders. Manager can see both the employee who raised the permission and the leader of employee. Manager will validate the Permission and Unique ID generated at the time of raising a permission. Whatever the response of Manager, it will be redirected to both leader and Employee �PERMISSION WITH UNIQUE-ID XXXXXXXX IS APPROVED/REJECTED� and the status of permission in both Leader module and Employee Module need to be updated corresponding to the response of Manager.
+      </p>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+This Project is about "Permission Management" in a Company between leader, manager and employees.
+
+Open Web Content --> open Project.html
+to get started.
+
+
+This is a Dynamic web project created by K Laxmi Narayan.
+
+Email: laxminarayan9845@gmail.com
+B.tech CSE
+KL University
